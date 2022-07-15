@@ -1,0 +1,6 @@
+import{d,r as i,a as p,o as v,g as m,u as n}from"./index.07558cb9.js";const _=d({__name:"index",setup(C){let u=i([{title:"\u8D2D\u7269",start:"2022-07-11 08:00",end:"2022-07-11 12:00",editable:!0},{title:"\u6572\u4EE3\u7801",start:"2022-07-12 10:00",end:"2022-07-12 16:00"}]),o=e=>{u.value.push({start:e.dateStr+" 12:00",end:e.dateStr+" 18:00",title:"\u5B66\u4E60"}),console.log("dateClick:",e)},r=e=>{},a=e=>{console.log(e);let l=document.createElement("div"),t=e.timeText.split("-"),s=t[0].replace("\u4E0A\u5348","").replace("\u4E0B\u5348","").replace("\u65F6",""),c=t[1].replace("\u4E0A\u5348","").replace("\u4E0B\u5348","").replace("\u65F6","");return l.innerHTML=`
+          <img src="src/assets/logo.png" style="width: 30px;height: 30px;"/>
+          <div style="color: red">\u5F00\u59CB\u65F6\u95F4: ${s}</div>
+          <div style="color: red">\u7ED3\u675F\u65F6\u95F4: ${c}</div>
+          <div>\u6807\u9898: ${e.event._def.title}</div>
+          `,{domNodes:[l]}};return(e,l)=>{const t=p("m-calendar");return v(),m(t,{displayEventEnd:"",events:n(u),eventContent:n(a),onDateClick:n(o),onEventClick:n(r)},null,8,["events","eventContent","onDateClick","onEventClick"])}}});export{_ as default};
